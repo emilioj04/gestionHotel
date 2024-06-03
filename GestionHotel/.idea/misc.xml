@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< develop
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel)" project-jdk-type="Python SDK" />
+=======
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12 (GestionHotel) (2)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel) (2)" project-jdk-type="Python SDK" />
+>>>>>>> vista de la pagina del hotel version0.1
 </project>
