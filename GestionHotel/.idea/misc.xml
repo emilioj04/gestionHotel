@@ -4,8 +4,17 @@
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel)" project-jdk-type="Python SDK" />
 =======
   <component name="Black">
+<<<<<<< Updated upstream
     <option name="sdkName" value="Python 3.12 (GestionHotel) (2)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel) (2)" project-jdk-type="Python SDK" />
+<<<<<<< develop
 >>>>>>> vista de la pagina del hotel version0.1
+=======
+=======
+    <option name="sdkName" value="Python 3.12 (GestionHotel) (3)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel) (3)" project-jdk-type="Python SDK" />
+>>>>>>> Stashed changes
+>>>>>>> quitar stash de templates
 </project>

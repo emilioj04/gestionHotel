@@ -19,4 +19,11 @@ def main():
 
 
 if __name__ == '__main__':
+<<<<<<< develop
     main()
+=======
+    main(
+
+
+    )
+>>>>>>> quitar stash de templates
