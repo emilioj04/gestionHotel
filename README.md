@@ -3,15 +3,15 @@ Sistema para la gestion de un hotel
 
 **Integrantes:** 
 
-- Alexis Roman
+- Alexis Vinicio Román Avila
                  
-- Daniel Sanchez
+- Holger Daniel Sanchez Valle
                  
-- Emilio Jaramillo
+- Emilio Ramiro Jaramillo Chamba
                  
-- Josue Torres   
+- Josue Rodolfo Torres Guiracocha
                  
-- Marco Orozco
+- Marco Vinicio Orozco Guamán
 
 **Ciclo:** Segundo
 
@@ -26,6 +26,8 @@ Sistema para la gestion de un hotel
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/458ca8aa-4a0e-4f1f-922f-3b2ce9eb642c)  
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/8d9adfb8-3c6e-4ace-b4f7-59d16856bbc3)  
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/753e5a34-4f74-40dc-8020-b63a85adaeeb)  
+![image](https://github.com/emilioj04/gestionHotel/assets/166523266/c27d9b3d-5075-4089-ad06-c0e6dc5c5523)
+
 
 
 
@@ -44,7 +46,7 @@ Puedes reemplazar "nombre_del_entorno_virtual" con el nombre que desees para tu 
 
 **3. Activar el entorno virtual:** Una vez creado el entorno virtual, necesitas activarlo. En la misma terminal de comandos, ejecuta el siguiente comando:
 
-**nombre_del_entorno_virtual\Scripts\activate**
+**.\nombre_del_entorno_virtual\Scripts\activate**
 
 Verás que el nombre del entorno virtual se agrega al principio de la línea de comandos, lo que indica que el entorno virtual está activo.
 
@@ -55,15 +57,7 @@ Verás que el nombre del entorno virtual se agrega al principio de la línea de 
 
 Esto instalará la última versión estable de Django en tu entorno virtual.
 
-**5. Crear un nuevo proyecto de Django:** Con Django instalado, puedes crear un nuevo proyecto de Django. Navega a la carpeta donde deseas crear el proyecto y ejecuta el siguiente comando:
+**CON ESTO YA PODRAS EJECUTAR CUALQUIER POROYECTO DE DJANGO EN TU EQUIPO**  
 
-**django-admin startproject nombre_del_proyecto**
-
-Reemplaza "nombre_del_proyecto" con el nombre que desees para tu proyecto.
-
-**6. Desactivar el entorno virtual:** Cuando hayas terminado de trabajar en tu proyecto de Django, puedes desactivar el entorno virtual ejecutando el siguiente comando:
-
-**deactivate**
-
-Esto restaurará tu entorno de Python a su estado original.
-
+**TUTORIAL:** 
+https://youtu.be/GcKVdXY9b_8 
