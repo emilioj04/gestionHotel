@@ -26,6 +26,8 @@ Sistema para la gestion de un hotel
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/458ca8aa-4a0e-4f1f-922f-3b2ce9eb642c)  
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/8d9adfb8-3c6e-4ace-b4f7-59d16856bbc3)  
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/753e5a34-4f74-40dc-8020-b63a85adaeeb)  
+![image](https://github.com/emilioj04/gestionHotel/assets/166523266/c27d9b3d-5075-4089-ad06-c0e6dc5c5523)
+
 
 
 
