@@ -44,7 +44,7 @@ Puedes reemplazar "nombre_del_entorno_virtual" con el nombre que desees para tu 
 
 **3. Activar el entorno virtual:** Una vez creado el entorno virtual, necesitas activarlo. En la misma terminal de comandos, ejecuta el siguiente comando:
 
-**nombre_del_entorno_virtual\Scripts\activate**
+**.\nombre_del_entorno_virtual\Scripts\activate**
 
 Verás que el nombre del entorno virtual se agrega al principio de la línea de comandos, lo que indica que el entorno virtual está activo.
 
@@ -55,15 +55,7 @@ Verás que el nombre del entorno virtual se agrega al principio de la línea de 
 
 Esto instalará la última versión estable de Django en tu entorno virtual.
 
-**5. Crear un nuevo proyecto de Django:** Con Django instalado, puedes crear un nuevo proyecto de Django. Navega a la carpeta donde deseas crear el proyecto y ejecuta el siguiente comando:
+**CON ESTO YA PODRAS EJECUTAR CUALQUIER POROYECTO DE DJANGO EN TU EQUIPO**  
 
-**django-admin startproject nombre_del_proyecto**
-
-Reemplaza "nombre_del_proyecto" con el nombre que desees para tu proyecto.
-
-**6. Desactivar el entorno virtual:** Cuando hayas terminado de trabajar en tu proyecto de Django, puedes desactivar el entorno virtual ejecutando el siguiente comando:
-
-**deactivate**
-
-Esto restaurará tu entorno de Python a su estado original.
-
+**TUTORIAL**
+https://youtu.be/GcKVdXY9b_8 
