@@ -30,3 +30,4 @@ Thumbs.db
 
 # Ignorar DBSQLite 
 *.sqlite3
+*.xml
