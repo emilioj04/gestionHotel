@@ -2,6 +2,7 @@
 Sistema para la gestion de un hotel
 
 **Integrantes:** 
+                
                  Alexis Roman
 
                  Daniel Sanchez
