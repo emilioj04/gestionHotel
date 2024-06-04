@@ -18,4 +18,9 @@ from django.urls import path
 from pruebaTemplate import views
 urlpatterns = [
     path('', views.home, name='home'),
+    path('habitaciones/', views.habitaciones, name='habitaciones'),
+    path('servicios/', views.servicios, name='servicios'),
+    path('testimonios/', views.testimonios, name='testimonios'),
+    path('contacto/', views.contacto, name='contacto'),
+    path('pago/', views.pago, name='pago'),
 ]

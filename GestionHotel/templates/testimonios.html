@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Testimonios
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'generales.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Sección de Testimonios -->
+<div class="content-section testimonials" id="testimonials">
+    <h2>Testimonios de Nuestros Clientes</h2>
+    <div class="testimonial">
+        <p>"Una experiencia increíble. El servicio fue excepcional y las instalaciones son de primera clase. Definitivamente volveré."</p>
+        <span>- Benito Minga.</span>
+    </div>
+    <div class="testimonial">
+        <p>"El hotel es hermoso y muy bien ubicado. Las habitaciones son muy cómodas y el personal es muy amable."</p>
+        <span>- Juan P.</span>
+    </div>
+    <div class="testimonial">
+        <p>"Nos encantó nuestra estancia. Todo estuvo perfecto, desde la comida hasta el servicio. Lo recomendamos al 100%."</p>
+        <span>- Ana R.</span>
+    </div>
+</div>
+{% endblock %}
