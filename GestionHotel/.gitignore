@@ -27,7 +27,3 @@ Thumbs.db
 # Ignorar archivos de configuración de IDEs 
 .idea/
 .vscode/
-
-# Ignorar DBSQLite 
-*.sqlite3
-*.xml
