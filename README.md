@@ -5,7 +5,7 @@ Sistema para la gestion de un hotel
 
 - Alexis Vinicio Román Avila
                  
-- Daniel Sanchez
+- Holger Daniel Sanchez Valle
                  
 - Emilio Ramiro Jaramillo Chamba
                  
