@@ -3,19 +3,19 @@ __pycache__/
 **/__pycache__/
 *.py[cod]
 
-# Ignorar archivos de migración (opcional)
+# Ignorar archivos de migración
 *.pyc
 *.pyo
 *.pyd
 
-# Ignorar archivos de entorno virtual (opcional, si usas un virtualenv en tu proyecto)
+# Ignorar archivos de entorno virtual
 venv/
 env/
 ENV/
 .venv/
 .ENV/
 
-# Ignorar archivos temporales de editores (opcional)
+# Ignorar archivos temporales de editores 
 *.swp
 *.swo
 *.swn
@@ -24,6 +24,9 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Ignorar archivos de configuración de IDEs (opcional)
+# Ignorar archivos de configuración de IDEs 
 .idea/
 .vscode/
+
+# Ignorar DBSQLite 
+*.sqlite3
