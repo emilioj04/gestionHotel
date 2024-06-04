@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< develop
+<<<<<<< develop
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel)" project-jdk-type="Python SDK" />
 =======
   <component name="Black">
@@ -17,4 +18,10 @@
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel) (3)" project-jdk-type="Python SDK" />
 >>>>>>> Stashed changes
 >>>>>>> quitar stash de templates
+=======
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12 (GestionHotel)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (GestionHotel)" project-jdk-type="Python SDK" />
+>>>>>>> Models sketch
 </project>
