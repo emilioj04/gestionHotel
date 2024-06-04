@@ -17,7 +17,7 @@ class Huesped(Persona):
     tarjeta = models.OneToOneField('Tarjeta', on_delete=models.DO_NOTHING, related_name='huesped',null=True, default=None)
 
     def __str__(self):
-        return self.persona.nombre + ' ' + self.persona.apellido
+        return self.nombre + ' ' + self.apellido
 
 
 class Tarjeta(models.Model):
@@ -26,4 +26,4 @@ class Tarjeta(models.Model):
     cvv = models.CharField(max_length=4)
 
     def __str__(self):
-        return self.nroTarjeta
+        return str(self.nroTarjeta)
