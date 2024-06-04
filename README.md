@@ -17,13 +17,14 @@ Sistema para la gestion de un hotel
 
 **Fecha:** 04/06/2024
 
-**Diagrama UML:**
-![**Digrama UML:** ](https://i.postimg.cc/15gbgtrm/Whats-App-Image-2024-06-03-at-9-59-42-PM.jpg)  
-
 **Acceso admin**
+
 User: admin
 
 Contraseña: 12345678
+
+**Diagrama UML:**
+![**Digrama UML:** ](https://i.postimg.cc/15gbgtrm/Whats-App-Image-2024-06-03-at-9-59-42-PM.jpg)  
 
 **CAPTURAS DE PANTALLA DE LA PAGINA WEB**  
 ![image](https://github.com/emilioj04/gestionHotel/assets/166523266/15207599-1e4d-4c1d-9106-871c348d9463)  
