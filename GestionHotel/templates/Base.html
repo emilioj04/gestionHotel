@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block css %}
+    {% endblock %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'imagenes/logo.jpg' %}" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Inicio</a></li>
+            <li><a href="{% url 'habitaciones' %}">Habitaciones</a></li>
+            <li><a href="{% url 'servicios' %}">Servicios</a></li>
+            <li><a href="{% url 'testimonios' %}">Testimonios</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Orozco - Hotel de Lujo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
