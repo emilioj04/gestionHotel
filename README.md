@@ -1,15 +1,15 @@
 # GestionHotel
 Sistema para la gestion de un hotel
 
-**Integrantes:** Alexis Roman.
+**Integrantes:** Alexis Roman
 
-                 Daniel Sanchez.
+                 Daniel Sanchez
                  
-                 Emilio Jaramillo.
+                 Emilio Jaramillo
                  
-                 Josue Torres.
+                 Josue Torres
                  
-                 Marco Orozco.
+                 Marco Orozco
 
 **Grupo:** 
 **Ciclo:** Segundo
