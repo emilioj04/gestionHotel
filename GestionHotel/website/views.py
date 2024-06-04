@@ -19,3 +19,6 @@ def contacto(request):
 
 def pago(request):
     return render(request, 'pago.html')
+
+def habitacion(request, id):
+    return render(request, 'habitacion.html')
