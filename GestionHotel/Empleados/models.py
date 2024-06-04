@@ -19,6 +19,6 @@ class Empleado(Persona):
     tipoEmpleado = models.CharField(max_length=15, choices=TipoEmpleado.choices, default=TipoEmpleado.MASAJISTA)
     salario = models.DecimalField(max_digits=10, decimal_places=2)
 
-    @property
+
     def __str__(self):
-        return self.persona.nombre + ' ' + self.persona.apellido
+        return self.nombre + ' ' + self.apellido
