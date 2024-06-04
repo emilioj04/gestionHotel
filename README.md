@@ -18,7 +18,17 @@ Sistema para la gestion de un hotel
 **Fecha:** 04/06/2024
 
 **Diagrama UML:**
-![**Digrama UML:** ](https://i.postimg.cc/15gbgtrm/Whats-App-Image-2024-06-03-at-9-59-42-PM.jpg)
+![**Digrama UML:** ](https://i.postimg.cc/15gbgtrm/Whats-App-Image-2024-06-03-at-9-59-42-PM.jpg)  
+
+
+**CAPTURAS DE PANTALLA DE LA PAGINA WEB**  
+![image](https://github.com/emilioj04/gestionHotel/assets/166523266/15207599-1e4d-4c1d-9106-871c348d9463)  
+![image](https://github.com/emilioj04/gestionHotel/assets/166523266/458ca8aa-4a0e-4f1f-922f-3b2ce9eb642c)  
+![image](https://github.com/emilioj04/gestionHotel/assets/166523266/8d9adfb8-3c6e-4ace-b4f7-59d16856bbc3)  
+![image](https://github.com/emilioj04/gestionHotel/assets/166523266/753e5a34-4f74-40dc-8020-b63a85adaeeb)  
+
+
+
 
 **¿COMO CONFIGURAR EL ENTORNO VIRTUAL PARA UN PROYECTO DE DJANGO?**
 
