@@ -3,7 +3,7 @@ Sistema para la gestion de un hotel
 
 **Integrantes:** 
 
-- Alexis Román
+- Alexis Vinicio Román
                  
 - Daniel Sanchez
                  
