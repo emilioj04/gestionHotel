@@ -9,6 +9,12 @@ class Factura(models.Model):
     fecha = models.DateField()
     reserva = models.ForeignKey(Reserva, on_delete=models.DO_NOTHING, related_name='facturas')
     servicioList = models.ManyToManyField(Servicio, related_name='facturas')
+    totalServicios = models.DecimalField(max_digits=10, decimal_places=2, default=0, editable=False)
+    totalHabitaciones = models.DecimalField(max_digits=10, decimal_places=2, default=0, editable=False)
+    subtotal = models.DecimalField(max_digits=10, decimal_places=2, default=0, editable=False)
+    totalImpuestos = models.DecimalField(max_digits=10, decimal_places=2, default=0, editable=False)
+    total = models.DecimalField(max_digits=10, decimal_places=2, default=0, editable=False)
+
 
     def calcular_total(self):
         self.totalServicios = sum(servicio.costo for servicio in self.servicioList.all())
