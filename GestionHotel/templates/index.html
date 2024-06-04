@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Gestion Hotel
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'generales.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="header">
+    <div class="header-content">
+        <div class="hotel-title">
+            <h1>Hotel Orozco</h1>
+            <img src="{% static 'imagenes/logo.jpg' %}" alt="Logo del Hotel" class="logo">
+        </div>
+        
+        <div class="hotel-info">    
+            <div style="margin-top: 20px;">
+                <p>¡Bienvenido a una experiencia inolvidable!</p>
+                <a href="#booking" class="btn">Reservar Ahora</a>
+            </div>
+            <p style="margin-top: 20px;">Descubre un mundo de lujo y confort en nuestro hotel de cinco estrellas. ¡Déjanos consentirte y hacer de tu estadía una experiencia única e inolvidable!</p>
+        </div>
+    </div>
+</div>
+
+<div class="slider">
+    <div class="slides">
+        <img src="https://th.bing.com/th/id/R.2128303b3783b9a1b243521b0b2b9fac?rik=Y6dW6ZuWxak9CA&pid=ImgRaw&r=0" alt="Imagen del hotel 1">
+        <img src="https://www.photoshopvideotutorial.com/freepsdmock/wp-content/uploads/2023/10/Hotel-Sign-Mockup-8-2000x1400.jpg" alt="Imagen del hotel 2">
+        <img src="https://th.bing.com/th/id/R.e4dbfc3e381b226a5f369d20007c1714?rik=4i2ojKHiANKvXw&riu=http%3a%2f%2f1.bp.blogspot.com%2f_uGCoghnCSws%2fTME0bqQn2yI%2fAAAAAAAAAB4%2fTemhTlBHJws%2fs1600%2fLuxury%2bhouse%2b(8).jpg&ehk=8QbewLmUJYrNsLhBo5RvNULeFo3C39XGjZNT4BbpC%2fw%3d&risl=&pid=ImgRaw&r=0" alt="Imagen del hotel 3">
+        <img src="https://www.photoshopvideotutorial.com/freepsdmock/wp-content/uploads/2023/10/Hotel-Sign-Mockup-8-2000x1400.jpg" alt="Imagen del hotel 4">
+        <img src="https://th.bing.com/th/id/R.0eee3be63b93f6a01e29f090a4842324?rik=yNTPehMFBpHAkw&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagen del hotel 5">
+    </div>
+</div>
+
+<div class="content-section">
+    <h2 class="welcome-title">La elegancia hecha Hotel.</h2>
+    <p>Descubre el lujo y la comodidad en Orozco, donde cada detalle está diseñado para ofrecerte una experiencia inolvidable.</p>
+</div>
+
+<div class="content-section" id="booking">
+    <h2>Reserva Ahora</h2>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="checkin">Fecha de Llegada:</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <label for="checkout">Fecha de Salida:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <input type="submit" value="Reservar">
+    </form>
+</div>
+{% endblock %}

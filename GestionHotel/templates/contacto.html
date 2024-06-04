@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Contacto
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'generales.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content-section contact-section" id="contact">
+    <h2>Ubicación y Contacto</h2>
+    <div class="map">
+        <!-- Inserta aquí el mapa de Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.320367889742!2d-122.40122168508368!3d37.79404497682026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858087a6d4b0d5%3A0x768dd6aebae36864!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1630499756129!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+        <p>Estamos ubicados en una de las mejores zonas de la ciudad, con fácil acceso a lugares de interés turístico y de negocios.</p>
+        <p>Para reservas o consultas, contáctanos al teléfono: <strong>(123) 456-7890</strong> o por correo electrónico: <strong>info@hotelorozco.com</strong></p>
+    </div>
+</div>
+{% endblock %}
