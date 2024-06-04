@@ -1,7 +1,8 @@
 # GestionHotel
 Sistema para la gestion de un hotel
 
-**Integrantes:** Alexis Roman
+**Integrantes:** 
+                 Alexis Roman
 
                  Daniel Sanchez
                  
