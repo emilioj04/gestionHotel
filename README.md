@@ -57,5 +57,5 @@ Esto instalará la última versión estable de Django en tu entorno virtual.
 
 **CON ESTO YA PODRAS EJECUTAR CUALQUIER POROYECTO DE DJANGO EN TU EQUIPO**  
 
-**TUTORIAL**
+**TUTORIAL:** 
 https://youtu.be/GcKVdXY9b_8 
