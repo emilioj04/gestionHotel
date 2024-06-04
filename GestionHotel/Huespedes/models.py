@@ -14,6 +14,7 @@ class TipoCliente(models.TextChoices):
 class Huesped(Persona):
     idHuesped = models.AutoField(primary_key=True)
     tipoCliente = models.CharField(max_length=10, choices=TipoCliente.choices, default=TipoCliente.NUEVO)
+    tarjeta = models.OneToOneField('Tarjeta', on_delete=models.DO_NOTHING, related_name='huesped',null=True, default=None)
 
     def __str__(self):
         return self.persona.nombre + ' ' + self.persona.apellido
@@ -21,7 +22,6 @@ class Huesped(Persona):
 
 class Tarjeta(models.Model):
     nroTarjeta = models.AutoField(primary_key=True)
-    huesped = models.ForeignKey(Huesped, on_delete=models.CASCADE, related_name='tarjeta')
     fechaExpiracion = models.DateField()
     cvv = models.CharField(max_length=4)
 

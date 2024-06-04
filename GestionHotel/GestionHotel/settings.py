@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'Huespedes',
+    'Empleados',
+    'Reservas',
 ]
 
 MIDDLEWARE = [
