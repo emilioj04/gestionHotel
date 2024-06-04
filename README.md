@@ -3,15 +3,15 @@ Sistema para la gestion de un hotel
 
 **Integrantes:** 
 
-- Alexis Roman
+- Alexis Román
                  
 - Daniel Sanchez
                  
-- Emilio Jaramillo
+- Emilio Ramiro Jaramillo Chamba
                  
-- Josue Torres   
+- Josue Rodolfo Torres Guiracocha
                  
-- Marco Orozco
+- Marco Vinicio Orozco Guamán
 
 **Ciclo:** Segundo
 
@@ -65,5 +65,5 @@ Reemplaza "nombre_del_proyecto" con el nombre que desees para tu proyecto.
 
 **deactivate**
 
-Esto restaurará tu entorno de Python a su estado origen.
+Esto restaurará tu entorno de Python a su estado original.
 
