@@ -65,5 +65,5 @@ Reemplaza "nombre_del_proyecto" con el nombre que desees para tu proyecto.
 
 **deactivate**
 
-Esto restaurará tu entorno de Python a su estado original.
+Esto restaurará tu entorno de Python a su estado origen.
 
