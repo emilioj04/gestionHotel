@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{  habitacion.tipoHabitacion }}
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'generales.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="content-section" id="habitacionesdetail">
+        <h1>Detalles de Habitación:</h1>
+        <div class="card-deck">
+            <div class="card" style="display: flex; justify-content: space-between;">
+                <div>
+                    <p>Numero de Habitacion: {{ habitacion.numero }}</p>
+                    <p>Tipo de Habitacion: {{ habitacion.tipoHabitacion }}</p>
+                    <p>Costo de Habitacion: {{ habitacion.costo }}</p>
+                    <p>Descripcio  de Habitacion: {{ habitacion.descripcion}}</p>
+                    <p>Capacidad de Habitacion: {{ habitacion.capacidad }}</p>
+                </div>
+            </div>
+            <div class="card" style="display: flex; justify-content: space-around;">
+                <img src="{{habitacion.imagen}}" class="card-img-top" alt="{{habitacion.tipoHabitacion}}">
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

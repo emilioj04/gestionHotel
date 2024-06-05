@@ -14,6 +14,13 @@ def habitaciones(request):
         }
     return render(request, 'habitaciones.html', content)
 
+def habitaciondetail(request, numero) :
+    habitacion = Habitacion.objects.get(numero=numero)
+    content = {
+        'habitacion': habitacion
+    }
+    return render(request, 'habitaciondetail.html', content)
+
 def servicios(request):
     return render(request, 'servicios.html')
 
