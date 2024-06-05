@@ -4,18 +4,20 @@ from Huespedes.models import Huesped
 
 
 class TipoHabitacion(models.TextChoices):
-    SENCILLA = 'S', 'Sencilla'
-    DOBLE = 'D', 'Doble'
-    TRIPLE = 'T', 'Triple'
-    MATRIMONIAL = 'M', 'Matrimonial'
-    PRESIDENCIAL = 'P', 'Presidencial'
-    VIP = 'V', 'VIP'
-    FAMILIAR = 'F', 'Familiar'
+    SENCILLA = 'Sencilla', 'Sencilla'
+    DOBLE = 'Doble', 'Doble'
+    TRIPLE = 'Triple', 'Triple'
+    MATRIMONIAL = 'Matrimonial', 'Matrimonial'
+    PRESIDENCIAL = 'Presidencial', 'Presidencial'
+    VIP = 'VIP', 'VIP'
+    FAMILIAR = 'Familiar', 'Familiar'
 
 
 class Habitacion(models.Model):
+    imagen = models.URLField(max_length=200, null=True,blank=True, default="https://th.bing.com/th/id/R.aa826c4a6e33b35a5da84f2a987412d0?rik=H%2bmTxTshNQRzeg&pid=ImgRaw&r=0")
     numero = models.IntegerField()
-    tipoHabitacion = models.CharField(max_length=1, choices=TipoHabitacion.choices, default=TipoHabitacion.SENCILLA)
+    tipoHabitacion = models.CharField(max_length=20, choices=TipoHabitacion.choices, default=TipoHabitacion.SENCILLA)
+    descripcion = models.TextField(default="Habitacion sencilla")
     costo = models.DecimalField(max_digits=10, decimal_places=2)
     disponibilidad = models.BooleanField(default=True)
     capacidad = models.IntegerField()
