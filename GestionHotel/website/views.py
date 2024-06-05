@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from Empleados.forms import EmpleadoForm
 # Create your views here.
 
 def home(request):
@@ -22,3 +22,8 @@ def pago(request):
 
 def habitacion(request, id):
     return render(request, 'habitacion.html')
+
+def addEmpleado(request):
+    return render(request, 'add_empleado.html', {
+        'form': EmpleadoForm
+    })

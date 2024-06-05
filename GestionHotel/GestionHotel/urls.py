@@ -17,6 +17,7 @@ Including another URLconf
 from django.urls import path
 from website import views
 from django.contrib import admin
+from Empleados import views
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -26,4 +27,5 @@ urlpatterns = [
     path('testimonios/', views.testimonios, name='testimonios'),
     path('contacto/', views.contacto, name='contacto'),
     path('pago/', views.pago, name='pago'),
+    path('add_empleado/', views.addEmpleado, name='add_empleado'),
 ]
