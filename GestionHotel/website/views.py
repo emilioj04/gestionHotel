@@ -1,28 +1,10 @@
 from django.shortcuts import render
-from Reservas.models import *
+from Reservas.views import *
 
 # Create your views here.
 
 def home(request):
     return render(request, 'index.html')
-
-
-def habitaciones(request):
-    habitaciones = Habitacion.objects.all()
-    content = {
-        'habitaciones': habitaciones
-        }
-    return render(request, 'habitaciones.html', content)
-
-def habitaciondetail(request, numero) :
-    habitacion = Habitacion.objects.get(numero=numero)
-    content = {
-        'habitacion': habitacion
-    }
-    return render(request, 'habitaciondetail.html', content)
-
-def servicios(request):
-    return render(request, 'servicios.html')
 
 def testimonios(request):
     return render(request, 'testimonios.html')

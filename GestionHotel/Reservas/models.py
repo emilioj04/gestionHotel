@@ -21,7 +21,6 @@ class Habitacion(models.Model):
     costo = models.DecimalField(max_digits=10, decimal_places=2)
     disponibilidad = models.BooleanField(default=True)
     capacidad = models.IntegerField()
-    reserva = models.ForeignKey('Reserva', on_delete=models.DO_NOTHING, related_name='habitacionList',default=None)
 
     def __str__(self):
         return str(self.numero)
@@ -37,7 +36,9 @@ class TipoServicio(models.TextChoices):
 
 
 class Servicio(models.Model):
+    imagen = models.URLField(max_length=200, null=True,blank=True, default="https://www.abasturhub.com/img/blog/roomservice-op1_-roomservice-con-serv--1-.jpg")
     tipoServicio = models.CharField(max_length=15, choices=TipoServicio.choices, default=TipoServicio.SPA)
+    descripcion = models.TextField(default="Servicio de comida a Habitación. Servicio rapido y de calidad")
     costo = models.DecimalField(max_digits=10, decimal_places=2)
     empleado_list = models.ForeignKey(Empleado, related_name='servicios', on_delete=models.DO_NOTHING,default=None)
 
