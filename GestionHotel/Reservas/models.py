@@ -21,6 +21,7 @@ class Habitacion(models.Model):
     costo = models.DecimalField(max_digits=10, decimal_places=2)
     disponibilidad = models.BooleanField(default=True)
     capacidad = models.IntegerField()
+    reserva = models.ForeignKey('Reserva', on_delete=models.DO_NOTHING, related_name='habitacionList',default=None)
 
     def __str__(self):
         return str(self.numero)
@@ -56,8 +57,8 @@ class Reserva(models.Model):
     estado = models.CharField(max_length=10, choices=EstadoReserva.choices, default=EstadoReserva.RESERVADA)
     nroHabitaciones = models.IntegerField()
     huesped = models.ForeignKey(Huesped, on_delete=models.DO_NOTHING, related_name='reservas')
-    servicioList = models.ForeignKey(Servicio, related_name='reservas',default=None, on_delete=models.DO_NOTHING)
-    habitacionList = models.ForeignKey(Habitacion, on_delete=models.DO_NOTHING, related_name='reservas',default=None)
+    servicioList = models.ForeignKey(Servicio, related_name='reservas_servicio',default=None, on_delete=models.DO_NOTHING)
+    habitaciones = models.ForeignKey(Habitacion, on_delete=models.DO_NOTHING, related_name='reservas_habitacion',default=None)
 
 
     def calcular_costo_total(self):
