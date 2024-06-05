@@ -13,71 +13,25 @@
 <div class="container">
 <!-- Sección de Habitaciones -->
 <div class="content-section" id="rooms">
-    <h2>Nuestras Habitaciones</h2>
+    <h2>Nuestras Habitaciones</h2>    
     <div class="card-deck">
-        <!-- Tarjeta de habitación Individual -->
-        <div class="card">
-            <img src="https://th.bing.com/th/id/R.aa826c4a6e33b35a5da84f2a987412d0?rik=H%2bmTxTshNQRzeg&pid=ImgRaw&r=0" class="card-img-top" alt="Habitación Individual">
-            <div class="card-body">
-                <h3 class="card-title">Habitación Individual</h3>
-                <p class="card-text">Perfecta para viajeros solos, con todas las comodidades necesarias para una estancia confortable.</p>
-                <a href="#" class="btn">Ver Detalles</a>
+        {% for habitacion in habitaciones %}
+            <div class="card">
+                <img src="{{habitacion.imagen}}" class="card-img-top" alt="{{habitacion.tipoHabitacion}}">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        {{habitacion.tipoHabitacion}}
+                    </h3>
+                    <p class="card-text">
+                        {{habitacion.descripcion}} <br>
+                        <strong>Precio:</strong> ${{habitacion.precio}} <br>
+                        <strong>Capacidad:</strong> {{habitacion.capacidad}} personas <br>
+                        <strong>Disponibilidad:</strong> {{habitacion.disponibilidad}} <br>
+                    </p>
+                    <a href="#" class="btn">Ver Detalles</a>
+                </div>
             </div>
-        </div>
-        <!-- Tarjeta de habitación Doble -->
-        <div class="card">
-            <img src="https://th.bing.com/th/id/R.a1a73c766831c584570b82b4dda3e0d6?rik=1ldJSozaFHEoKw&riu=http%3a%2f%2fmural.uv.es%2fsanesba%2fwebclase%2fimagenes%2fhabitaciondelujo2.jpg&ehk=EskoUG4Ccwf4tpFIeeQlxGCUCWnyEx2%2fsM3OmKY49D8%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Habitación Doble">
-            <div class="card-body">
-                <h3 class="card-title">Habitación Doble</h3>
-                <p class="card-text">Ideal para parejas o amigos, con dos camas individuales y un ambiente acogedor.</p>
-                <a href="#" class="btn">Ver Detalles</a>
-            </div>
-        </div>
-        <!-- Tarjeta de habitación Triple -->
-        <div class="card">
-            <img src="https://th.bing.com/th/id/R.dbe227a4748a9c1949d0e79b3ee124e2?rik=2lJc5ivwSe12ew&pid=ImgRaw&r=0" class="card-img-top" alt="Habitación Triple">
-            <div class="card-body">
-                <h3 class="card-title">Habitación Triple</h3>
-                <p class="card-text">Perfecta para pequeños grupos o familias, con tres camas individuales.</p>
-                <a href="#" class="btn">Ver Detalles</a>
-            </div>
-        </div>
-        <!-- Tarjeta de habitación Familiar -->
-        <div class="card">
-            <img src="https://www.hotelroyaltonbluewaters.com/images/rooms/luxury_junior_suite/gallery-2.jpg" class="card-img-top" alt="Habitación Familiar">
-            <div class="card-body">
-                <h3 class="card-title">Habitación Familiar</h3>
-                <p class="card-text">Espaciosa y cómoda, ideal para familias que buscan un lugar acogedor.</p>
-                <a href="#" class="btn">Ver Detalles</a>
-            </div>
-        </div>
-        <!-- Tarjeta de habitación VIP -->
-        <div class="card">
-            <img src="https://th.bing.com/th/id/OIP.2Jg2YZy3QmY4SyqJl931qgAAAA?w=474&h=315&rs=1&pid=ImgDetMain" class="card-img-top" alt="Habitación VIP">
-            <div class="card-body">
-                <h3 class="card-title">Habitación VIP</h3>
-                <p class="card-text">Disfruta de nuestra habitación VIP con servicios exclusivos y vistas espectaculares.</p>
-                <a href="#" class="btn">Ver Detalles</a>
-            </div>
-        </div>
-        <!-- Tarjeta de habitación Matrimonial -->
-        <div class="card">
-            <img src="https://i.pinimg.com/originals/fe/7e/c6/fe7ec659179fcacfd5a6690c9ccfbf66.jpg" class="card-img-top" alt="Habitación Matrimonial">
-            <div class="card-body">
-                <h3 class="card-title">Habitación Matrimonial</h3>
-                <p class="card-text">Perfecta para parejas, con una cama king size y todas las comodidades.</p>
-                <a href="#" class="btn">Ver Detalles</a>
-            </div>
-        </div>
-        <!-- Tarjeta de Suite Presidencial -->
-        <div class="card">
-            <img src="https://th.bing.com/th/id/R.66450c58569d5b5fabf91d08de820129?rik=27HxOSt3v1LteA&pid=ImgRaw&r=0" class="card-img-top" alt="Suite Presidencial">
-            <div class="card-body">
-                <h3 class="card-title">Suite Presidencial</h3>
-                <p class="card-text">Nuestra suite más lujosa con servicios premium y vistas impresionantes.</p>
-                <a href="#" class="btn">Ver Detalles</a>
-            </div>
-        </div>
+        {% endfor %}       
     </div>
 </div>
 {% endblock %}
