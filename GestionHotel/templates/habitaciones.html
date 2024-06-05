@@ -28,7 +28,7 @@
                         <strong>Capacidad:</strong> {{habitacion.capacidad}} personas <br>
                         <strong>Disponibilidad:</strong> {{habitacion.disponibilidad}} <br>
                     </p>
-                    <a href="#" class="btn">Ver Detalles</a>
+                    <a href="{% url 'habitacion_detail' habitacion.numero%}" class="btn">Ver Detalles</a>
                 </div>
             </div>
         {% endfor %}       
