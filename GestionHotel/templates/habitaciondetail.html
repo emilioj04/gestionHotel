@@ -13,13 +13,14 @@
 <div class="container">
     <div class="content-section" id="habitacionesdetail">
         <h1>Detalles de Habitación:</h1>
+        <h2>{{ habitacion.tipoHabitacion }}</h2>
         <div class="card-deck">
             <div class="card" style="display: flex; justify-content: space-between;">
                 <div>
-                    <p>Numero de Habitacion: {{ habitacion.numero }}</p>
+                    <p>Numero de Habitación: {{ habitacion.numero }}</p>
                     <p>Tipo de Habitacion: {{ habitacion.tipoHabitacion }}</p>
                     <p>Costo de Habitacion: {{ habitacion.costo }}</p>
-                    <p>Descripcio  de Habitacion: {{ habitacion.descripcion}}</p>
+                    <p>Descripción  de Habitacion: {{ habitacion.descripcion}}</p>
                     <p>Capacidad de Habitacion: {{ habitacion.capacidad }}</p>
                 </div>
             </div>
